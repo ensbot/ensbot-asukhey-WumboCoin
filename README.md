@@ -59,4 +59,4 @@ Each node has a blockchain attached to it and it is important to make sure that 
 
 
 
-** *Shoutout to my bud and a fellow spongebob fan Prerna Kapoor for suggesting the cryptocurrency name **
+ *Shoutout to my bud and a fellow spongebob fan Prerna Kapoor for suggesting the cryptocurrency name*
