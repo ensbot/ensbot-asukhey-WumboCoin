@@ -57,6 +57,8 @@ Each node has a blockchain attached to it and it is important to make sure that 
 
 ![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/4_equalizing_blockchain.PNG "Blockchain Synchronization")
 
+**I'll be studying about smart contracts and will update readMe asap**
+
 
 
  *Shoutout to my bud and a fellow spongebob fan Prerna Kapoor for suggesting the cryptocurrency name*
