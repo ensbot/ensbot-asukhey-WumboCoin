@@ -129,12 +129,13 @@ class Blockchain:
     
         #Method to add transaction: It'll hold 3 important elements- Sender,Reciever, Amount
     def addTransaction(self,sender, receiver,amt):
-        self.transactions.append({'Sender':sender,
-                                  'Receiver':receiver,
-                                  'Amount': amt})
+        self.transactions.append({'sender':sender,
+                                  'receiver':receiver,
+                                  'amount': amt})
         #Need to append the transaction in the latest block that'll be mined. For this we need the last block mined
         prev_block = self.getLastBlock()
         return prev_block['index'] +1 #Returns index of the new block
+    #NOTE: FOR THE FUNCTION ABOVE, BLOCK NEEDS TO BE MINED FIRST TO ADD TRANSACTIONS.
     
     #Will accept node and its address
     def addNode(self,address):

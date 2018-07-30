@@ -35,7 +35,7 @@ def mine_block():
     prev_proof = prev_block['proof']         #Retrieves nonce of the last block
     proof = bc.workProof(prev_proof) #Returns new nonce from previous nonce
     last_hash = bc.hashFunction(prev_block)  #Returns hash function of the previous block
-    bc.addTransaction(sender=node_add,receiver='Akashneel',amt=2) #Implementing add transaction method
+    #bc.addTransaction(sender=node_add,receiver='Akashneel',amt=2) #Implementing add transaction method
     block = bc.createBlock(proof,last_hash) #Creates a block from nonce and previous hash (2 out of 4 main properties of block)
     #Response message and properties of block in postman.
     res = {'Message': 'Block mined successfully',
@@ -79,7 +79,7 @@ def newTransaction():
         return 'Elements missing in transaction', 400
     index= bc.addTransaction(json['sender'],json['receiver'],json['amount'])
     res={'message': f'Transaction added to block {index}'}
-    return res,201
+    return jsonify(res),201
 
 #Connecting new nodes
 @app.route('/connect_nodes',methods=['POST'])
