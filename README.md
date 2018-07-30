@@ -57,6 +57,22 @@ Each node has a blockchain attached to it and it is important to make sure that 
 
 ![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/4_equalizing_blockchain.PNG "Blockchain Synchronization")
 
+**Update- Adding user defined transactions through postman 7/30/2018**
+
+#### v. Add Transaction
+Created a new method that accepts following parameters from user - sender, receiver, amount. After the parameters are submitted, they'll be added in the next block mined. Following snaps implement the methods.
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/5_User_Def_Transaction.PNG "Transaction created")
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/6_mine_block.PNG "Transaction added to the block mined after")
+
+#### vi. Viewing blockchain after the transactions
+Kindly note that the blockchain is not similar to the ones above, since I haven't made it persistent yet, running the programs again reinitializes the blockchain with new blocks.
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/7_view_Blocks.PNG "Blockchain")
+
+
+
 **I'll be studying about smart contracts and will update readMe asap**
 
 
