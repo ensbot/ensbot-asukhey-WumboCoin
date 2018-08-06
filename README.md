@@ -105,23 +105,67 @@ After the contract has been deployed, a block is created
 ![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.2.Transactions.PNG "Transaction")
 
 ***c. Contract Interaction**
-By going to the contracts tab, you get an option to interact with contracts or deploy a contract. The latter one needs to be performed before executing any functions. To deploy the file, it needs to be compiled that generates a byte code. The snap below is from remix solidity website where the sol file was created. The details option in the compile tab generates byte code and ABI code (which'll be explained below)
+After deploying the contract, the functions coded in the file can be executed to render output. Two parameters are accepted here- Contract address (mentioned in Ganache UI) and ABI (Code that explains what actions can run, in this case it is purchasing and selling of wumbo coins, and info such as usd rate etc). Here $1=100 WC(WumboCoins) 
 
-![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.ABI_And_Bytecode.PNG "ABI & Byte Code")
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.0.Contract_Interaction.PNG "ABI & Byte Code")
 
-After the contract has been deployed, a block is created
-![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.0.contract_deployed.PNG "Deployed")
+Following functions are defined in the smart contract
 
-![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.1_detailed_blocks.PNG "Block Created")
+**I. Number of coins Issued**
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.1.Coins_Issued.PNG "No. of Coins issued")
 
-![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.2.Transactions.PNG "Transaction")
+**II. Buy Coin**
+This function accepts two parameters- investor (node address of the buyer) and usd_spent (amount of dollars spent)
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.2.0.Buy_wc.PNG "Block Created")
+
+Block is created that includes the transaction that can be viewed in ganache
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.2.1.Block_Created.PNG "Block")
+
+Block holds that respective transaction
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.2.3.Transaction_Created.PNG "Transaction")
+
+Details of the transaction
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.2.4_Transaction_Detail.PNG "Detailed Transaction")
+
+**III. Equity **
+
+Mentions how many WumboCoins does the investor possess. This accepts investor's node address as the parameter.
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.4.equity_wbc.PNG "Equity")
 
 
+**IV. Equity of an investor in USD **
+
+Mentions how many dollars worth of WumboCoin does a respective investor possess. This accepts investor's node address as the parameter. 
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.3.equity_usd.PNG "USD Equity")
 
 
+**V. USD WumboCoin Rate **
+ 
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.5_usd_wbc_rate.PNG "USD WC Rate")
+
+**VI. Number Of WumboCoins Purchased **
+ 
+ Out of total WumboCoins Issued, how many of them have been purchased by investors.
+ 
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.6.No_of_wbc_purchased.PNG "WumboCoins Purchased")
 
 
+**VII. Sell Coin **
+  
+ Coins purchased by investor can be sold. This requires 2 parameters i.e Node Address of investor and number of coins. 
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.7.0.Sell_wc.PNG "Sell Coin")
+
+After the operation is executed a block is created storing the transaction.
+![alt text]https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.7.1.Block_Created.PNG "Block Created")
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.7.2.Transaction_Created.PNG "Transaction in block")
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/3.7.3.Transaction_Detail.PNG "Transaction Detail")
 
 
+## Conclusion
 
- *Shoutout to my bud and a fellow spongebob fan Prerna Kapoor for suggesting the cryptocurrency name*
+To summarize all that I've learned. My main objective of this project was to implement decentralized networking with the help of blockchain alongwith embedding few protocols in it using smart contracts. Enclosing I would like to thank following people-
+Kirill Eremenko, for explaining the concepts in an easier way and also recommending various research papers to learn more about the concepts involved in this project. Hadelin de Ponteves, For guiding with pragmatic implementation of blockchain, cryptocurrency an smart contracts. Prerna Kapoor, For suggesting the best name for cryptocurrency.
