@@ -2,11 +2,11 @@
 
 ## Objective:
 
-To understand the working of transactions on a decentralized network using blockchain with the help of cryptocurrency created. After reading about bitcoin, I was more interested in creating a cryptocurrency similar to that rather than investing in one ,P.S. Also it values at 7869.31 USD (dated 7/27/2018) , I don't have that much money.
+To understand the working of transactions on a decentralized network using blockchain with the help of cryptocurrency created alongwith the use of smart contracts. After reading about bitcoin, I was more interested in creating a cryptocurrency similar to that rather than investing in one ,P.S. Also it values at 7869.31 USD (dated 7/27/2018) , I don't have that much money.
 
 ## Introduction:
 
-WumboCoin (Thanks to Patrick Star from Spongebob Squarepants) is a cryptocurrency I created to understand working of cryptocurrency transactions on a decentralized network using blockchain technology pragmatically. Blockchain is defined as a chain of blocks linked to each other where each block is hashed using SHA-256. Reason why SHA-256 is used cause it follows "Avalanche effect"- A slight change in the text will render a completely different hash code from first to 64th HEX value.
+WumboCoin (Term coined by the legend Patrick Star from Spongebob Squarepants) is a cryptocurrency I created to understand working of cryptocurrency transactions on a decentralized network using blockchain technology pragmatically. Blockchain is defined as a chain of blocks linked to each other where each block is hashed using SHA-256. Reason why SHA-256 is used cause it follows "Avalanche effect"- A slight change in the text will render a completely different hash code from first to 64th HEX value.
 
 ### In this project, block has following important properties:
 
@@ -73,7 +73,54 @@ Kindly note that the blockchain is not similar to the ones above, since I haven'
 
 
 
-**I'll be studying about smart contracts and will update readMe asap**
+## Smart Contracts
+
+Smart Contract is a program created that runs on blockchain. There are two well known scripts for smart contracts i.e Bitcoin script and solidity. In this project I've used solidity since it is turing complete (enables programmer to code any logic into the program). Bitcoin script is not turing complete since it misses the concept of loops avoiding attackers to tamper with programming logic (Eg. adding infinite loop that can destroy the blockchain).
+
+### Tools used for smart contracts:
+
+**i. Truffle Ganache**- User Interface 
+**ii. Remix Solidity**- Create Smart Contracts 
+**iii. MyEtherWallet**- Deploy and interact with smart contracts 
+
+### Working:
+
+Smart Contract has been created under a solidity format file named WumboCoin.ico.sol. Following steps were taken to successfully test a set of functions created under smart contracts.
+
+***a. Set Up a custom node**
+A custom node is setup in MyEtherWallet with IP address of Ganache and a user defined name
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/0.Set_Up_Custom_node.PNG "Custom Node")
+
+
+***b. Deploy Contract**
+By going to the contracts tab, you get an option to interact with contracts or deploy a contract. The latter one needs to be performed before executing any functions. To deploy the file, it needs to be compiled that generates a byte code. The snap below is from remix solidity website where the sol file was created. The details option in the compile tab generates byte code and ABI code (which'll be explained below)
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.ABI_And_Bytecode.PNG "ABI & Byte Code")
+
+After the contract has been deployed, a block is created
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.0.contract_deployed.PNG "Deployed")
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.1_detailed_blocks.PNG "Block Created")
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.2.Transactions.PNG "Transaction")
+
+***c. Contract Interaction**
+By going to the contracts tab, you get an option to interact with contracts or deploy a contract. The latter one needs to be performed before executing any functions. To deploy the file, it needs to be compiled that generates a byte code. The snap below is from remix solidity website where the sol file was created. The details option in the compile tab generates byte code and ABI code (which'll be explained below)
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.ABI_And_Bytecode.PNG "ABI & Byte Code")
+
+After the contract has been deployed, a block is created
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.0.contract_deployed.PNG "Deployed")
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.1_detailed_blocks.PNG "Block Created")
+
+![alt text](https://github.com/asukhey/WumboCoin/blob/master/Snaps/smart_contract_snaps/2.2.Transactions.PNG "Transaction")
+
+
+
+
+
+
 
 
 
