@@ -168,4 +168,4 @@ After the operation is executed a block is created storing the transaction.
 ## Conclusion
 
 To summarize all that I've learned. My main objective of this project was to implement decentralized networking with the help of blockchain alongwith embedding few protocols in it using smart contracts. Enclosing I would like to thank following people-
-Kirill Eremenko, for explaining the concepts in an easier way and also recommending various research papers to learn more about the concepts involved in this project. Hadelin de Ponteves, For guiding with pragmatic implementation of blockchain, cryptocurrency an smart contracts. Prerna Kapoor, For suggesting the best name for cryptocurrency.
+Kirill Eremenko, for explaining the concepts in an easier way and also recommending various research papers to learn more about the concepts involved in this project. Hadelin de Ponteves, For guiding with pragmatic implementation of blockchain, cryptocurrency an smart contracts and Prerna Kapoor, For suggesting the best cryptocurrency name ever.
